@@ -18,28 +18,28 @@ def is_enabled(value, default):
         return default
 
 #main variables
-API_ID = int(environ.get('API_ID', ''))
-API_HASH = environ.get('API_HASH', '')
+API_ID = int(environ.get('API_ID', '20421609'))
+API_HASH = environ.get('API_HASH', '17187c5466fb7044793bfa8bcaa9ec68')
 BOT_TOKEN = environ.get('BOT_TOKEN', '')
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '').split()]
-USERNAME = environ.get('USERNAME', 'https://telegram.me/TechifyGuru')
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', ''))
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '').split()]
-DATABASE_URI = environ.get('DATABASE_URI', "")
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1511468725').split()]
+USERNAME = environ.get('USERNAME', 'https://telegram.me/Master_HP_Raj')
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001965914571'))
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001840476165').split()]
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://Hanuman:hanuman@cluster0.l5toshc.mongodb.net/?retryWrites=true&w=majority")
 DATABASE_URI2 = environ.get('DATABASE_URI2', "")
-DATABASE_NAME = environ.get('DATABASE_NAME', "Rahul")
-COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Rahul')
-LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', ''))
+DATABASE_NAME = environ.get('DATABASE_NAME', "Hanuman")
+COLLECTION_NAME = environ.get('COLLECTION_NAME', 'HPCollection')
+LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', '-1001965914571'))
 QR_CODE = environ.get('QR_CODE', 'https://envs.sh/wam.jpg')
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '0').split()]
 
 #this vars is for when heroku or koyeb acc get banned, then change this vars as your file to link bot name
-BIN_CHANNEL = int(environ.get('BIN_CHANNEL', ''))
+BIN_CHANNEL = int(environ.get('BIN_CHANNEL', '-1001840476165'))
 URL = environ.get('URL', '')
 
 # verify system vars
-IS_VERIFY = is_enabled('IS_VERIFY', True)
-LOG_VR_CHANNEL = int(environ.get('LOG_VR_CHANNEL', ''))
+IS_VERIFY = is_enabled('IS_VERIFY', False)
+LOG_VR_CHANNEL = int(environ.get('LOG_VR_CHANNEL', '-1001840476165'))
 TUTORIAL = environ.get("TUTORIAL", "https://youtu.be/0c-i2Lol6LU")
 TUTORIAL2 = environ.get("TUTORIAL2", "https://youtu.be/GdaUbzxDTKs")
 TUTORIAL3 = environ.get("TUTORIAL3", "https://youtu.be/rddlpYLm0G0")
@@ -56,9 +56,9 @@ THREE_VERIFY_GAP = int(environ.get('THREE_VERIFY_GAP', "21600"))
 # languages search
 LANGUAGES = ["hindi", "english", "telugu", "tamil", "kannada", "malayalam"]
 
-auth_channel = environ.get('AUTH_CHANNEL', '')
+auth_channel = environ.get('AUTH_CHANNEL', '-1002282093291')
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
-SUPPORT_GROUP = int(environ.get('SUPPORT_GROUP', ''))
+SUPPORT_GROUP = int(environ.get('SUPPORT_GROUP', '-1001807915473'))
 
 # bot settings
 AUTO_FILTER = is_enabled('AUTO_FILTER', True)
